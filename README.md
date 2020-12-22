@@ -2,6 +2,8 @@
 
 Wearing mask is the most effective way to control the spread of Corona virus. Face mask detector applications are in high demand especially to monitor public places like public marketplaces, public offices, malls, government buildings etc  This project aims to create an efficient Face Mask detector application based on deep neural network.
 
+![alt text](./readme_images/test2.png) ![alt text](./readme_images/test3.png)
+
 <b> Dataset used for training </b>
 
 I have used the data from [Face Mask Detection](https://www.kaggle.com/andrewmvd/face-mask-detection/activity) dataset from Kaggle. The dataset contained annotated images with 3 classes:
@@ -40,7 +42,7 @@ The repo contains ssd efficientdet model trained with 20,000 iterations using Go
         $pip install -r requirements.txt
 5. To perform face mask detection on images:
     
-        $python face_mask_detector.py --type image --input {_Path to directory containing images_} --output {_Path to directory where you want to store the images with predictions_}
+        $python face_mask_detector.py --type image --input {Path to directory containing images} --output {Path to directory where you want to store the images with predictions}
    
 6. To perform face mask detection on webcam:
     
