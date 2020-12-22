@@ -10,6 +10,8 @@ I have used the data from [Face Mask Detection](https://www.kaggle.com/andrewmvd
 2. without mask
 3. mask worn incorrectly
 
+The dataset contains total of 853 images along with annotations in PASCAL VOC format.
+
 <b> Technolgy stack used </b>
 
 1. [OpenCV](https://opencv.org/) 
@@ -22,18 +24,25 @@ I have used the data from [Face Mask Detection](https://www.kaggle.com/andrewmvd
 
 All the dependencies and required libraries are included in the file _requirements.txt_.
 
+<b> Model Training </b>
+
+The repo contains ssd efficientdet model trained with 20,000 iterations using Google Colab. You can also refer to [my colab notebook](https://colab.research.google.com/drive/1tGTuIg2xJipoln8IC8cxH35Wr4nJ7930?usp=sharing), where I have tried to explain step by step flow for performing model training using Tensorflow2 object detection API. 
+
 <b> Installation </b>
-1. Clone the repo using following command
-    $ git clone ~~https://github.com/chandrikadeb7/Face-Mask-Detection.git~~
+
+1. Clone the repo using following command 
+    
+        $ git clone https://github.com/coolmunzi/face_mask_detector.git
 2. Create a virtual environment and change the directory to the cloned repo
 3. Change your directory to the cloned repo and create a Python virtual environment named 'test'
 4. Install the dependencies using following command
-    $pip install -r requirements.txt
+    
+        $pip install -r requirements.txt
 5. To perform face mask detection on images:
-    $python face_mask_detector.py --type image --input {_Path to direcory containing images_} --output {_Path to directory where you want to store the images with predictions_}
+    
+        $python face_mask_detector.py --type image --input {_Path to directory containing images_} --output {_Path to directory where you want to store the images with predictions_}
+   
 6. To perform face mask detection on webcam:
-    $python face_mask_detector.py --type video --input webcam
+    
+        $python face_mask_detector.py --type video --input webcam
 
-
-<b> License </b>
-MIT © https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/LICENSE
